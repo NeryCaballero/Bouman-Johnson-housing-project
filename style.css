@@ -5,22 +5,39 @@
 }
 
 body {
-    background-image: url("bg.jpg");
+    background-image: url("bg.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Cabin', sans-serif;
+    font-size: 2.5vh;
+}
+
+#github {
+    padding: 3vh;
+}
+
+#github a {
+    background-color: rgba(237, 237, 237, 0.6);
+    border: 1px solid rgb(77, 85, 67);
+    border-radius: 3px;
+    color: rgb(22, 19, 50);
+    font-size: 1.5vh;
+    padding: 1vh;
+    text-decoration: none;
 }
 
 #container {
-    background-color: rgba(255,255,255,0.5);
-    border: 3px solid grey;
-    margin: 10vh;
-    max-width: 50vw;
+    background-color: rgba(237, 237, 237, 0.6);
+    border: 1px solid grey;
+    border-radius: 10px;
+    box-shadow: 15px 15px 7px rgba(22, 19, 50, 0.6), -15px -15px 12px rgba(22, 19, 50, 0.6);
+    margin: 4vh 15vh;
+    max-width: 43vw;
     padding: 10vh;
 }
 
 h1, h3 {
-    color: rgb(58, 58, 186);
+    color: rgb(22, 19, 50);
     margin-bottom: 5vh;
 }
 
