@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Cabin', sans-serif;
+}
+
+#container {
+    background-color: rgba(255,255,255,0.5);
+    border: 3px solid grey;
+    margin: 10vh;
+    max-width: 50vw;
+    padding: 10vh;
+}
+
+h1, h3 {
+    color: rgb(58, 58, 186);
+    margin-bottom: 5vh;
+}
+
+h3 {
+    margin-top: 5vh;
+}
+
+form,
+.estimationResult {
+    padding-left: 8vh;
+}
+
+.label {
+    display: block;
+}
+
+.option {
+    padding: 2vh 0;
+}
+
+input,
+select {
+    padding: 1vh;
+    margin-top: 1vh;
+    width: 50vh;
+}
+
+#radioInput{
+    margin: 2vh 1vh 2vh 7vh;
+    max-width: 5vh;
+}
