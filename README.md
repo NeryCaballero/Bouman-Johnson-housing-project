@@ -1,6 +1,6 @@
 # Bouman-Johnson-housing-project
 
-- Live: [https://nerycaballero.github.io/Bouman-Johnson-housing-project/housing-project.html]
+- Live: https://nerycaballero.github.io/Bouman-Johnson-housing-project/housing-project.html
 
 ## What
 - This application connects to an API  (built by a Bouman/AI intern) using javascript and fetch.
