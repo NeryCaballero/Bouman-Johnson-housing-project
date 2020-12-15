@@ -5,11 +5,12 @@
 }
 
 body {
-    background-image: url("bg.jpeg");
+    background-image: url("bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: 'Cabin', sans-serif;
-    font-size: 2.5vh;
+    color: rgb(0, 10, 32);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2vh;
 }
 
 #github {
@@ -19,25 +20,28 @@ body {
 #github a {
     background-color: rgba(237, 237, 237, 0.6);
     border: 1px solid rgb(77, 85, 67);
-    border-radius: 3px;
+    border-radius: 10px;
     color: rgb(22, 19, 50);
     font-size: 1.5vh;
-    padding: 1vh;
+    padding: 1.4vh;
     text-decoration: none;
 }
 
 #container {
-    background-color: rgba(237, 237, 237, 0.6);
-    border: 1px solid grey;
+    background-color: rgba(237, 237, 237, 0.7);
     border-radius: 10px;
-    box-shadow: 15px 15px 7px rgba(22, 19, 50, 0.6), -15px -15px 12px rgba(22, 19, 50, 0.6);
-    margin: 4vh 15vh;
-    max-width: 43vw;
-    padding: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 12vh;
+    max-width: 35vw;
+    padding: 6vh;
+}
+
+h1 {
+    text-align: center;
 }
 
 h1, h3 {
-    color: rgb(22, 19, 50);
     margin-bottom: 5vh;
 }
 
@@ -47,7 +51,7 @@ h3 {
 
 form,
 .estimationResult {
-    padding-left: 8vh;
+    padding-left: 5vh;
 }
 
 .label {
@@ -55,11 +59,13 @@ form,
 }
 
 .option {
-    padding: 2vh 0;
+    padding: 1.4vh 0;
 }
 
 input,
 select {
+    border: 1px solid rgb(0, 10, 32);
+    border-radius: 1vh;
     padding: 1vh;
     margin-top: 1vh;
     width: 50vh;
@@ -68,4 +74,15 @@ select {
 #radioInput{
     margin: 2vh 1vh 2vh 7vh;
     max-width: 5vh;
+}
+
+#submit1, 
+#submit2 {
+    background-color: rgb(21, 41, 88);
+    color: rgb(214, 240, 119);
+    font-family: 'Josefin Sans';
+    font-size: 2vh;
+    padding: 1.2vh 0 1vh 0;
+    border: none;
+    border-radius: 1vh;
 }
