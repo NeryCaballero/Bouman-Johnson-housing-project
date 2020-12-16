@@ -10,6 +10,6 @@
 
 
 ## Pending things to do:
-- Fetch Zip Codes options from the API.
+- Improve responsiveness of the interface.
 - Tune in "Full address" input.
 - Host on a free server.
