@@ -10,8 +10,8 @@ fetch(url)
         // console.log(data.properties.data.properties['zip-code'].enum)               
 
     dropdownZip.forEach(code => {
-          zipcode.insertAdjacentHTML("beforeend", `<option>${code}</option>`)      // for each code, create an option
-    }) 
+          zipcode.insertAdjacentHTML("beforeend", `<option>${code}</option>`);      // for each code, create an option
+    }); 
 });
 // FETCH AVAILABLE ZIPCODES FROM API END --------------------------------------------------------------------------------
 
@@ -123,7 +123,7 @@ document.getElementById('submit1').addEventListener("click", () => {
             "full-address": fullAddress,
             "property-subtype": propertySubtype
         }
-    }
+    };
     console.log(inputData);
 
     const url = "https://cnos4.herokuapp.com/predict";
@@ -156,7 +156,7 @@ document.getElementById('submit1').addEventListener("click", () => {
     .catch(error => {
         console.log('error!');
         console.log(error);
-    })
+    });
 });
 
 // Event Listener for Second Button #submit2
