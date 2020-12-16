@@ -9,9 +9,9 @@
     <title>Immo Eliza</title>
 </head>
 <body>
-    <div id="github">
+    <nav id="github">
         <a href="https://github.com/NeryCaballero/Bouman-Johnson-housing-project">Back to GitHub Repository</a>
-    </div>
+    </nav>
     <div id="container">
         <h1>Estimate your Property Value</h1>
 
@@ -20,35 +20,35 @@
 
             <div class="option">
                 <label for="area" class="label">Area (in m2)</label>
-                <input id="area" name="area" type="number"></br>
+                <input id="area" name="area" type="number">
             </div>
             
             <div class="option">
                 <p>Type of Property:</p>
             </div>
             <div class="radio-option">
-                <input type="radio" value="APARTMENT" name="type" id="radioInput">
-                <label for="Appartement">Apartment</label></br>
+                <input type="radio" value="APARTMENT" name="type" id="Appartement">
+                <label for="Appartement">Apartment</label>
             </div>
             <div class="radio-option">
-                <input type="radio" value="HOUSE" name="type" id="radioInput">
-                <label for="House">House</label></br>
+                <input type="radio" value="HOUSE" name="type" id="House">
+                <label for="House">House</label>
             </div>
         
             <div class="radio-option">
-                <input type="radio" value="OTHERS" name="type" id="radioInput">
-                <label for="Others">Other</label></br>
+                <input type="radio" value="OTHERS" name="type" id="Others">
+                <label for="Others">Other</label>
             </div>
             
             <div class="option">
                 <label for="rooms" class="label">Number of rooms</label>
-                <input id="rooms" name="rooms" type="number"> </br>
+                <input id="rooms" name="rooms" type="number">
             </div>
 
             <div class="option">
                 <label for="zipcode" class="label">Zip Code</label>
                 <select name="zipcode" id="zipcode" class="zipcode">
-                    <option class="zipcode" value=""></option>
+                    <option class="zipcode" value="placeholder">Select</option>
                 </select>
             </div>
             
@@ -59,7 +59,7 @@
             <h3>Fill in for a precise estimation:</h3>
             <div class="option">
                 <label for="landarea" class="label">Land area (in m2)</label>
-                <input id="landarea" name="landarea" type="number"></br>
+                <input id="landarea" name="landarea" type="number">
             </div>
             
             <div class="option">
@@ -72,7 +72,7 @@
 
             <div class="option">
                 <label for="gardenarea" class="label">Garden area (in m2)</label>
-                <input id="gardenarea" name="gardenarea" type="number"></br>
+                <input id="gardenarea" name="gardenarea" type="number">
             </div>
 
             <div class="option">
@@ -117,12 +117,12 @@
             
             <div class="option">
                 <label for="terrace-area" class="label">Terrace area (in m2)</label>
-                <input id="terrace-area" name="terrace-area" type="number"></br>
+                <input id="terrace-area" name="terrace-area" type="number">
             </div>
             
             <div class="option">
                 <label for="facades-number" class="label">Facades Number:</label>
-                <input id="facades-number" name="facades-number" type="number"></br>
+                <input id="facades-number" name="facades-number" type="number">
             </div>
 
             <div class="option">
@@ -176,6 +176,6 @@
         </form>
     </div>
 
-    <script type="text/javascript" src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
