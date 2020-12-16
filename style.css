@@ -5,11 +5,10 @@
 }
 
 body {
-    background-image: url("bg.jpg");
-    background-repeat: no-repeat;
+    background: whitesmoke url("bg.jpg") no-repeat center;
     background-size: cover;
     color: rgb(0, 10, 32);
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
     font-size: 1.8vh;
 }
 
@@ -41,91 +40,127 @@ h1 {
 
 h1, h3 {
     margin-bottom: 2vh;
+    text-align: center;
 }
 
 h3 {
     margin-top: 5vh;
+    color: rgb(21, 41, 88);
 }
 
-form {
-    padding-left: 1vh;
-}
-
+p,
 .label {
-    display: block;
+    width: 100%;
+    text-align: center;
 }
 
 .option {
     padding: 1.4vh 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 input,
 select {
     border: 1px solid rgb(0, 10, 32);
     border-radius: 1vh;
+    font-family: 'Playfair Display';
     padding: 1vh;
     margin-top: 1vh;
     width: 25vh;
 }
 
-#radioInput{
-    margin: 2vh 1vh 2vh 1vh;
-    max-width: 5vh;
+.radio-option{
+    display: flex;
+    flex-wrap: wrap;
+    vertical-align: top;
+    padding-bottom: 10px;
+}
+
+.radio-option input {
+    max-width: 10%;
+    margin: 0 2% 0 20%;
+}
+
+.radio-option label {
+    max-width: 75%;
 }
 
 #submit1, 
 #submit2 {
     background-color: rgb(21, 41, 88);
-    color: rgb(214, 240, 119);
-    font-family: 'Josefin Sans';
+    color: rgb(240, 191, 78);
+    font-family: 'Playfair Display', serif;
     font-size: 2vh;
-    padding: 1.2vh 0 1vh 0;
+    padding: 1vh 0 1.2vh 0;    
     border: none;
     border-radius: 1vh;
 }
 
 @media screen and (min-width: 768px) {
-    body {font-size: 2vh;}
+    body {font-size: 2.4vh;}
 
     #github {padding: 3vh;}
     
     #github a {
-        background-color: rgba(237, 237, 237, 0.6);
-        border: 1px solid rgb(77, 85, 67);
-        border-radius: 10px;
-        color: rgb(22, 19, 50);
         font-size: 1.5vh;
         padding: 1.4vh;
-        text-decoration: none;
     }
-
-    h1, h3 {margin-bottom: 5vh;}
 
     #container {
-        max-width: 65vh;
-        padding: 6vh;
+        padding: 5vh;
     }
 
-    form {padding-left: 12vh;}
-
     input,
-    select {width: 30vh;}
+    select {
+        width: 35vh;
+        padding: 1.3vh;
+        font-size: 1.7vh;
+    }
 
-    #radioInput {
-        margin: 2vh 1vh 2vh 7vh;
-        max-width: 5vh;
+    #submit1, #submit2 {
+        font-size: 2.5vh;
+    }
+
+    .radio-option input {
+        max-width: 10%;
+        margin: 0 0 0 35%;
     }
 }
 
-@media screen and (min-width: 1024px) {
-    #container {max-width: 85vh;}
+@media screen and (min-width: 1024px){
+    #container {
+        max-width: 55vw;
+    }
 
-    form {padding-left: 17vh;}
+    .option {
+        padding: 1.8vh 0;
+    }
 
-    input,
-    select {width: 40vh;}
+    input, select {width: 45vh;}
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 2560px){
     body {font-size: 3vh;}
+
+    #github {padding: 8vh;}
+    
+    #github a {
+        font-size: 3vh;
+        padding: 2vh;
+    }
+
+    #container {
+        border-radius: 20px;
+        max-width: 65vw;
+        padding: 10vh;
+    }
+
+    .radio-option input {
+        max-width: 5%;
+        margin: 0 2% 0 40%;
+    }
+
+    input, select {font-size: 2vh}
 }
