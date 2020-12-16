@@ -15,8 +15,7 @@ fetch(url)
 });
 // FETCH AVAILABLE ZIPCODES FROM API END --------------------------------------------------------------------------------
 
-
-
+// Event Listener for First Button #submit1
 document.getElementById('submit1').addEventListener("click", () => {
     
     let area = new Number(document.getElementById('area').value);
@@ -160,6 +159,7 @@ document.getElementById('submit1').addEventListener("click", () => {
     })
 });
 
+// Event Listener for Second Button #submit2
 document.getElementById('submit2').addEventListener("click", () => {
     
     let area = new Number(document.getElementById('area').value);
