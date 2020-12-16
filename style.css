@@ -10,11 +10,11 @@ body {
     background-size: cover;
     color: rgb(0, 10, 32);
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 2vh;
+    font-size: 1.8vh;
 }
 
 #github {
-    padding: 3vh;
+    padding: 2vh;
 }
 
 #github a {
@@ -22,19 +22,17 @@ body {
     border: 1px solid rgb(77, 85, 67);
     border-radius: 10px;
     color: rgb(22, 19, 50);
-    font-size: 1.5vh;
-    padding: 1.4vh;
+    font-size: 1.3vh;
+    padding: 1vh;
     text-decoration: none;
 }
 
 #container {
     background-color: rgba(237, 237, 237, 0.7);
     border-radius: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 12vh;
-    max-width: 35vw;
-    padding: 6vh;
+    margin: 2vh auto 12vh auto;
+    max-width: 80vw;
+    padding: 3vh;
 }
 
 h1 {
@@ -42,16 +40,15 @@ h1 {
 }
 
 h1, h3 {
-    margin-bottom: 5vh;
+    margin-bottom: 2vh;
 }
 
 h3 {
     margin-top: 5vh;
 }
 
-form,
-.estimationResult {
-    padding-left: 5vh;
+form {
+    padding-left: 1vh;
 }
 
 .label {
@@ -68,11 +65,11 @@ select {
     border-radius: 1vh;
     padding: 1vh;
     margin-top: 1vh;
-    width: 50vh;
+    width: 25vh;
 }
 
 #radioInput{
-    margin: 2vh 1vh 2vh 7vh;
+    margin: 2vh 1vh 2vh 1vh;
     max-width: 5vh;
 }
 
@@ -85,4 +82,50 @@ select {
     padding: 1.2vh 0 1vh 0;
     border: none;
     border-radius: 1vh;
+}
+
+@media screen and (min-width: 768px) {
+    body {font-size: 2vh;}
+
+    #github {padding: 3vh;}
+    
+    #github a {
+        background-color: rgba(237, 237, 237, 0.6);
+        border: 1px solid rgb(77, 85, 67);
+        border-radius: 10px;
+        color: rgb(22, 19, 50);
+        font-size: 1.5vh;
+        padding: 1.4vh;
+        text-decoration: none;
+    }
+
+    h1, h3 {margin-bottom: 5vh;}
+
+    #container {
+        max-width: 65vh;
+        padding: 6vh;
+    }
+
+    form {padding-left: 12vh;}
+
+    input,
+    select {width: 30vh;}
+
+    #radioInput {
+        margin: 2vh 1vh 2vh 7vh;
+        max-width: 5vh;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #container {max-width: 85vh;}
+
+    form {padding-left: 17vh;}
+
+    input,
+    select {width: 40vh;}
+}
+
+@media screen and (min-width: 1440px) {
+    body {font-size: 3vh;}
 }
