@@ -10,6 +10,5 @@
 
 
 ## Pending things to do:
-- Improve responsiveness of the interface.
 - Tune in "Full address" input.
 - Host on a free server.
