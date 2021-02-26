@@ -1,7 +1,7 @@
 // FETCH AVAILABLE ZIPCODES FROM API : --------------------------------------------------------------------------------
 
 let zipcode = document.querySelector('#zipcode');
-const url = "http://cnos2.herokuapp.com/predict"; 
+const url = "https://cnos2.herokuapp.com/predict"; 
 
 fetch(url)
 .then(response => response.json())
@@ -126,7 +126,7 @@ document.getElementById('submit1').addEventListener("click", () => {
     };
     console.log(inputData);
 
-    const url = "http://cnos2.herokuapp.com/predict";
+    const url = "https://cnos2.herokuapp.com/predict";
     fetch(url,                                                  // This is the request, 1st parameter : the URL of the API
         {method: 'POST',                                        // the 2nd parameter is the data we provide to the API. (Header, body, method)
         body: JSON.stringify(inputData),                        // Packaging up all of my data and send it as a stringify, the js object data and make it into a JSON string.
@@ -268,7 +268,7 @@ document.getElementById('submit2').addEventListener("click", () => {
     }
     console.log(inputData);
 
-    const url = "http://cnos2.herokuapp.com/predict";
+    const url = "https://cnos2.herokuapp.com/predict";
     fetch(url,                                              // This is the request, 1st parameter : the URL of the API
         {method: 'POST',                                    // the 2nd parameter is the data we provide to the API.
         body: JSON.stringify(inputData),                    // Packaging up all of my data and send it as a stringify, the js object data and make it into a JSON string.
