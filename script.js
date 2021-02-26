@@ -1,7 +1,7 @@
 // FETCH AVAILABLE ZIPCODES FROM API : --------------------------------------------------------------------------------
 
 let zipcode = document.querySelector('#zipcode');
-const url = "https://cnos4.herokuapp.com/predict"; 
+const url = "http://cnos2.herokuapp.com/predict"; 
 
 fetch(url)
 .then(response => response.json())
